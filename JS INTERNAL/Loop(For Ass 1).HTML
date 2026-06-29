@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N = []
+        let sums = 0
+        function Addition(){
+            for(i=0;i<=6;i++){
+                a = parseInt(prompt("Enter a number:"))
+                N.push(a);
+        }
+            for(let i = 0;i<N.length;i++){
+                sums = sums+N[i]
+            }
+
+        }
+        Addition();
+        console.log(N);
+        console.log(sums);
+    </script>    
+</body>
+</html>

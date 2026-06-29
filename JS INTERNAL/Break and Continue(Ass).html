@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*3,1,0 skip and 4 break*/
+        let x = [7,3,8,1,6,2,8,0,4,5,7,8,6,5]
+        let count = 0
+        let i=0;
+        while(i<x.length){
+            if(x[i]==3){
+                i++;
+                continue;
+            }
+            if(x[i]==1){
+                i++;
+                continue;
+            }
+            if(x[i]==0){
+                i++;
+                continue;
+            }
+            if(x[i]==4){
+                
+                break;
+            }
+            console.log(x[i])
+            i++;
+        }
+    </script>
+</body>
+</html>

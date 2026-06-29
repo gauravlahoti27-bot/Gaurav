@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let city  = ['mumbai','nashik','bhopal']
+        console.log(city);
+        document.write(`<h2>I stay in ${city[2]}</h2>`);
+
+        /* To display length of array */
+        console.log('the length of the array is'+city.length);
+
+        /* To add element in last position */
+        city.push('surat');
+        console.log(city);
+
+        /* To add array element in first position */
+        city.unshift('pune');
+        console.log(city);
+
+        /* To remover array element fron last */
+        city.pop();
+        console.log(city);
+
+        /* To remove array from first */
+        city.shift();
+        console.log(city);
+
+        /* To remove array element from middle */
+        let indexToRemove = Math.floor(city.length / 2); //get the index of the middle element
+        city.splice(indexToRemove, 1); //remove the element from the array at the calculated index
+        console.log(city); 
+    </script>
+</body>
+</html>

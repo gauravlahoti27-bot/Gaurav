@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    input {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<script>
+    let color;
+ function display(color){
+    document.body.style.backgroundColor = color;
+    console.log(color)
+    } 
+</script>
+<form name="f1">
+<input  style="color:green;" name="t1" type="button" value="Green" onclick="display('green')">    
+<input  style="color:blue;" name="t1" type="button" value="Blue" onclick="display('blue')">    
+<input  style="color:yellowgreen;" name="t1" type="button" value="Yellowgreen" onclick="display('yellowgreen')">    
+<input  style="color:red;" name="t1" type="button" value="Red" onclick="display('red')">    
+<input  style="color:orange;" name="t1" type="button" value="Orange" onclick="display('orange')">    
+<input  style="color:brown;" name="t1" type="button" value="Brown" onclick="display('brown')">
+<input  style="color:aqua;" name="t1" type="button" value="Aqua" onclick="display('aqua')">    
+</form>
+</body>
+</html>

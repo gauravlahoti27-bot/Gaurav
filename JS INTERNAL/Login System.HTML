@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        form{
+              text-align: center;
+              margin-top: 10%;
+              margin-left: 40%;
+              background: white;
+              padding: 30px;
+             border-radius: 10px;
+            display: inline-block;
+            border-color: black;
+            box-shadow: 0 0 10px rgba(21, 16, 16, 0.1);
+        }
+        input,button{
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function display(){
+        var Username = "GAURAV27"
+        var Password = "GPL"
+        var a = f1.t1.value
+        var b = f1.t2.value
+        if(a==Username && b==Password){
+            alert("Login & Password Successful")
+        window.location.href = 'Web Ass.HTML';
+        }
+        else if(a!=Username && b==Password){
+            alert("Wrong Username")
+        }
+        else if(a==Username && b!=Password){
+            alert("Wrong Password")
+        }        
+        else{
+            alert("Login Unsuccessful")
+        }   
+        }  
+    </script>
+    <form name="f1">
+        <label style="font-size: larger;">Login</label><br><br> 
+        <input type="text" name="t1" placeholder="Username"><br><br>
+        <input type="text" name="t2" placeholder="Password"><br><br>
+        <input type="button"  value="Check" onclick="display()">
+    </form>   
+</body>
+</html>

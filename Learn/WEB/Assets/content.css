@@ -1,0 +1,225 @@
+/* ===================================
+   CodeMaster - Content Style Sheet
+=================================== */
+
+/* ---------- Headings ---------- */
+
+.content h1{
+    font-size:42px;
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.content h2{
+    font-size:30px;
+    color:#16a34a;
+    margin-top:40px;
+    margin-bottom:15px;
+}
+
+.content h3{
+    font-size:24px;
+    color:#2563eb;
+    margin-top:25px;
+    margin-bottom:12px;
+}
+
+/* ---------- Paragraph ---------- */
+
+.content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:18px;
+}
+
+/* ---------- Lists ---------- */
+
+.content ul,
+.content ol{
+    margin:20px 0 20px 30px;
+}
+
+.content li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+/* ---------- Code Box ---------- */
+
+.code-box{
+    background:#1e293b;
+    color:#f8fafc;
+    padding:20px;
+    border-radius:10px;
+    margin:25px 0;
+    overflow-x:auto;
+    font-family:Consolas, monospace;
+    line-height:1.7;
+}
+
+/* ---------- Example Box ---------- */
+
+.example{
+    background:#f8fafc;
+    border-left:6px solid #22c55e;
+    padding:20px;
+    margin:25px 0;
+    border-radius:8px;
+}
+
+/* ---------- Note ---------- */
+
+.note{
+    background:#fff8dc;
+    border-left:6px solid orange;
+    padding:18px;
+    margin:25px 0;
+    border-radius:8px;
+}
+
+/* ---------- Warning ---------- */
+
+.warning{
+    background:#ffe5e5;
+    border-left:6px solid red;
+    padding:18px;
+    margin:25px 0;
+    border-radius:8px;
+}
+
+/* ---------- Tip ---------- */
+
+.tip{
+    background:#e7f7ff;
+    border-left:6px solid #0ea5e9;
+    padding:18px;
+    margin:25px 0;
+    border-radius:8px;
+}
+
+/* ---------- Tables ---------- */
+
+.content table{
+    width:100%;
+    border-collapse:collapse;
+    margin:30px 0;
+}
+
+.content th{
+    background:#16a34a;
+    color:white;
+    padding:14px;
+    text-align:left;
+}
+
+.content td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+.content tr:nth-child(even){
+    background:#f3f4f6;
+}
+
+/* ---------- Images ---------- */
+
+.content img{
+    max-width:100%;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+/* ---------- Buttons ---------- */
+
+.learn-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.learn-btn:hover{
+    background:#15803d;
+}
+
+/* ---------- Quiz ---------- */
+
+.quiz{
+    background:#f9fafb;
+    padding:25px;
+    border-radius:10px;
+    margin-top:30px;
+}
+
+.quiz input{
+    width:100%;
+    padding:12px;
+    margin:15px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.quiz button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.quiz button:hover{
+    background:#1d4ed8;
+}
+
+/* ---------- Navigation Buttons ---------- */
+
+.page-nav{
+    display:flex;
+    justify-content:space-between;
+    margin-top:50px;
+}
+
+.page-nav a{
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:8px;
+}
+
+.page-nav a:hover{
+    background:#15803d;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+.content h1{
+    font-size:32px;
+}
+
+.content h2{
+    font-size:26px;
+}
+
+.content p{
+    font-size:16px;
+}
+
+.page-nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+.page-nav a{
+    text-align:center;
+}
+
+}

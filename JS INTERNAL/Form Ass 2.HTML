@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1">
+    1st Number : <input type="text" name="t1"><br>
+    2nd Number : <input type="text" name="t2"><br>    
+    <input type="button" value="Addition" onclick="addtion()">
+    <input type="button" value="Division" onclick="division()">
+    </form>
+    <script>
+        function addtion()
+        {
+        var a,b,d,e;
+        a=f1.t1.value;
+        d=parseInt(a);
+        b=f1.t2.value;
+        e=parseInt(b);
+        alert(d+e);
+        }
+        function division()
+        {
+        var a,b,d,e;
+        a=f1.t1.value;
+        d=parseInt(a);
+        b=f1.t2.value;
+        e=parseInt(b);
+        alert(d/e);
+        }
+        
+    </script>
+</body>
+</html>

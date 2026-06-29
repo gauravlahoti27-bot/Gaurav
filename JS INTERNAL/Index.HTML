@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let d = new Date();
+        console.log(d); 
+        console.log(d.toDateString());
+        console.log(d.getFullYear());
+        console.log(d.getMonth());
+        console.log(d.getDate());
+
+        d.setMonth(2);
+        d.setDate(15);
+        d.setFullYear(1984);
+        console.log(d);
+        
+        let b = new Date('4 September 1984');
+        console.log(b);
+
+        let date = new Date();
+        let dayName = date.toLocaleDateString("hi-IN",{weekday:'long'});
+        console.log(dayName);
+        let dayname = date.toLocaleTimeString();
+        console.log(dayname);
+    </script>
+</body>
+</html>

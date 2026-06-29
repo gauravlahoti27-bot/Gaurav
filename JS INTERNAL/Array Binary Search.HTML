@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N =[]
+        for(i=0;i<5;i++){
+            var a = parseInt(prompt("Enter A Number"))
+            N.push(a)
+        }
+        console.log(N)
+        let low = 0;
+        console.log(low)
+        let high = N.length-1
+        console.log(high)
+        let middle = (high+low)/2
+        console.log(middle)
+        var b = parseInt(prompt("Target Number"))
+       if(b>N[middle]){
+        let low = N[middle+1]
+        console.log(low) 
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple E-Commerce</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+#products div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+  </style>
+  <link>
+</head>
+<body>
+  <h1>My E-Commerce Store</h1>
+
+  <div id="products"></div>
+
+  <h2>Cart</h2>
+  <ul id="cart"></ul>
+  <button onclick="checkout()">Checkout</button>
+
+  <script>
+     const products = [
+  { id: 1, name: "T-Shirt", price: 500 },
+  { id: 2, name: "Jeans", price: 1200 },
+  { id: 3, name: "Shoes", price: 2000 }
+];
+
+const cart = [];
+
+function showProducts() {
+  const container = document.getElementById('products');
+  products.forEach(p => {
+    const div = document.createElement('div');
+    div.innerHTML = `
+      <h3>${p.name}</h3>
+      <p>₹${p.price}</p>
+      <button onclick="addToCart(${p.id})">Add to Cart</button>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function addToCart(id) {
+  const product = products.find(p => p.id === id);
+  cart.push(product);
+  updateCart();
+}
+
+function updateCart() {
+  const cartEl = document.getElementById('cart');
+  cartEl.innerHTML = '';
+  cart.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - ₹${item.price}`;
+    cartEl.appendChild(li);
+  });
+}
+
+function checkout() {
+  if (cart.length === 0) {
+    alert("Cart is empty!");
+  } else {
+    let total = cart.reduce((sum, item) => sum + item.price, 0);
+    alert(`Thank you for shopping! Total: ₹${total}`);
+    cart.length = 0;
+    updateCart();
+  }
+}
+
+showProducts();
+  </script>
+</body>
+</html>

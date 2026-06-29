@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Number Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      text-align:center;
+      padding: 50px;
+    }
+    #game {
+      background: white;
+      padding: 300px;
+      border-radius: 100px;
+      display:inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    #result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <h1>Guess the Number (1-100)</h1>
+    <input type="number" id="guess" placeholder="Enter your guess" />
+    <button onclick="checkGuess()">Check</button>
+    <p id="result"></p>
+    <p>Attempts left: <span id="attempts">10</span></p>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+
+  <script>
+    let secretNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 10;
+
+    function checkGuess() {
+      const guess = parseInt(document.getElementById('guess').value);
+      const result = document.getElementById('result');
+      const attemptsText = document.getElementById('attempts');
+
+      if (isNaN(guess)) {
+        result.textContent = 'Please enter a valid number!';
+        return;
+      }
+
+      attempts--;
+      attemptsText.textContent = attempts;
+
+      if (guess === secretNumber) {
+        result.textContent = `🎉 Correct! The number was ${secretNumber}.`;
+        disableInput();
+      } else if (guess < secretNumber) {
+        result.textContent = 'Too low! Try again.';
+      } else {
+        result.textContent = 'Too high! Try again.';
+      }
+
+      if (attempts === 0 && guess !== secretNumber) {
+        result.textContent = `😢 Game Over! The number was ${secretNumber}.`;
+        disableInput();
+      }
+    }
+
+    function disableInput() {
+      document.getElementById('guess').disabled = true;
+    }
+
+    function restartGame() {
+      secretNumber = Math.floor(Math.random() * 100) + 1;
+      attempts = 10;
+      document.getElementById('guess').disabled = false;
+      document.getElementById('guess').value = '';
+      document.getElementById('result').textContent = '';
+      document.getElementById('attempts').textContent = attempts;
+    }
+  </script>
+</body>
+</html>

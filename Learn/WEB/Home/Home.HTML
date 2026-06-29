@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CodeMaster</title>
+
+<link rel="stylesheet" href="../Assets/style.css">
+
+<style>
+
+/* Hero */
+
+.hero{
+
+    background:linear-gradient(135deg,#2563eb,#16a34a);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:25px;
+
+}
+
+.search-box input{
+
+    width:400px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px 0 0 8px;
+
+    font-size:18px;
+
+}
+
+.search-box button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    background:#111827;
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:0 8px 8px 0;
+
+}
+
+/* Languages */
+
+.languages{
+
+    padding:60px 40px;
+
+}
+
+.languages h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    text-decoration:none;
+
+    background:#16a34a;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+}
+
+/* Features */
+
+.features{
+
+    background:#f3f4f6;
+
+    padding:60px 40px;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.features ul{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+/* Reviews */
+
+.reviews{
+
+    padding:60px 40px;
+
+}
+
+.review-container{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.review{
+
+    width:300px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<div class="navbar">
+
+<div class="logo">
+
+CodeMaster
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="home.html">Home</a></li>
+
+<li><a href="../HTML/html.html">HTML</a></li>
+
+<li><a href="../CSS/css.html">CSS</a></li>
+
+<li><a href="../JAVASCRIPT/javascript.html">JavaScript</a></li>
+
+<li><a href="../PYTHON/python.html">Python</a></li>
+
+<li><a href="../JAVA/java.html">Java</a></li>
+
+<li><a href="../LOGIN.html">Login</a></li>
+
+<li><a href="../SIGNUP.html">Sign Up</a></li>
+
+</ul>
+
+</div>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>Learn to Code</h1>
+
+<p>India's Student Friendly Coding Platform</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search Tutorials...">
+
+<button>Search</button>
+
+</div>
+
+</section>
+
+<!-- Languages -->
+
+<section class="languages">
+
+<h2>Popular Tutorials</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>HTML</h3>
+<p>Build webpages from scratch.</p>
+<a href="../HTML/html.html">Start Learning</a>
+</div>
+
+<div class="card">
+<h3>CSS</h3>
+<p>Design beautiful websites.</p>
+<a href="../CSS/css.html">Start Learning</a>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Make websites interactive.</p>
+<a href="../JAVASCRIPT/javascript.html">Start Learning</a>
+</div>
+
+<div class="card">
+<h3>Python</h3>
+<p>Easy and powerful programming language.</p>
+<a href="../PYTHON/python.html">Start Learning</a>
+</div>
+
+<div class="card">
+<h3>Java</h3>
+<p>Object-Oriented Programming.</p>
+<a href="../JAVA/java.html">Start Learning</a>
+</div>
+
+<div class="card">
+<h3>C Programming</h3>
+<p>Learn the fundamentals of programming.</p>
+<a href="../C/c.html">Start Learning</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+
+<section class="features">
+
+<h2>Why Choose CodeMaster?</h2>
+
+<ul>
+
+<li>✔ Beginner Friendly Tutorials</li>
+
+<li>✔ Real Code Examples</li>
+
+<li>✔ Practice Exercises</li>
+
+<li>✔ Interview Questions</li>
+
+<li>✔ Mini Projects</li>
+
+<li>✔ Completely Free Learning</li>
+
+</ul>
+
+</section>
+
+<!-- Reviews -->
+
+<section class="reviews">
+
+<h2 style="text-align:center;margin-bottom:40px;">Student Reviews</h2>
+
+<div class="review-container">
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>"The tutorials are easy to understand. Perfect for beginners!"</p>
+
+<b>- Rahul</b>
+
+</div>
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>"Much easier than reading long books. I loved the examples."</p>
+
+<b>- Priya</b>
+
+</div>
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<p>"One of the best college learning projects I've seen."</p>
+
+<b>- Aman</b>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<div class="footer">
+
+<p>© 2026 CodeMaster | Learn • Practice • Build</p>
+
+</div>
+
+</body>
+
+</html>

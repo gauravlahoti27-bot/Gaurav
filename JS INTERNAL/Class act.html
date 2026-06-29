@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Marksheet{
+            constructor(name,maths,eng,sci,rollno,remark){
+                this.name = name
+                this.maths = maths 
+                this.eng = eng
+                this.sci = sci
+                this.remark = remark
+                this.rollno = rollno
+            }
+            Submit(){
+                alert(this.name+ " your marksheet is uploaded")
+            }
+            Math(){
+                alert("Score in Math is "+this.maths)
+            }
+            Eng(){
+                alert("Score in English  is "+this.eng)
+            }
+            Sci(){
+                alert("Score in Science is "+this.sci)
+            }
+            Total(){
+                alert("Score in Total is "+(this.maths+this.eng+this.sci))
+            }
+            Remark(){
+                alert(this.name+" -"+this.rollno+" you  are "+this.remark)
+            }
+        }
+        let gaurav = new Marksheet("Gaurav",90,80,87,32,(this.maths+this.eng+this.sci)<105 ? "Failed" : "Passed")
+        gaurav.Submit()
+        gaurav.Math()
+        gaurav.Eng()
+        gaurav.Sci()
+        gaurav.Total()
+        gaurav.Remark()
+    </script>
+</body>
+</html>

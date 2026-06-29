@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+    <title>Event 5</title>
+    <style>
+        body{
+            background-size: cover; /* Resize the background image to cover the entire body */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */ 
+        }
+    </style>
+<body>
+    <select onchange="changeBackgroundImage(this)">
+        <option value=" ">Choose image</option>
+        <option value="pic1.jpg">Image1</option>
+        <option value="pic2.jpg">Image2</option>
+        <option value="pic3.jpg">Image3</option>
+        <option value="pic4.jpg">Image4</option>
+        <option value="pic5.jpg">Image5</option>
+    </select>
+    <script>
+        function changeBackgroundImage(select) {
+            document.body.style.backgroundImage = "url(" + select.value + ")"
+        }
+    </script>
+</body>
+</html>

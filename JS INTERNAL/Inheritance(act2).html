@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class account{
+            constructor(accoun_no,balance){
+                this.accoun_no=accoun_no
+                this.balance=balance
+            }
+            deposit(){
+                let amount = prompt("Enter a value for deposit")
+                amount = Number.parseInt(amount)
+                this.balance += amount
+            }
+            withdraw(){
+                let cash = prompt("Enter a value for withdraw")
+                cash = Number.parseInt(cash)
+                this.balance -= cash
+            }
+            check_balance(){
+                alert(this.accoun_no+" your account number has a balance of "+this.balance)
+            }
+        }
+        let left = parseInt(prompt("How much of balance I have?"))
+        let gaurav = new account(9348,left)
+        gaurav.deposit()
+        gaurav.withdraw()
+        gaurav.check_balance()
+    </script>
+</body>
+</html>

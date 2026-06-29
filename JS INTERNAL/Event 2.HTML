@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="background-color: olive; color: white; font-size: 30px;">
+    Result:<span id="result">0</span>
+    <br>
+    <input type="button" value="+1" id="increment">
+    <input type="button" value="-1" id="decrement">
+    <script>
+        let inc = document.getElementById("increment")
+        let dec = document.getElementById("decrement")
+        let result = document.getElementById("result")
+        let count = 0;
+        function write(){
+            result.innerText = count;
+        }
+        function increment(){
+            count++;
+            write();
+        }
+        function decrement(){
+            count--;
+            write();
+        }
+        inc.onclick = increment;
+        dec.onclick = decrement;
+    </script>
+</body>
+</html>

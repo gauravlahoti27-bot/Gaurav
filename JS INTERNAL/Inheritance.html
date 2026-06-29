@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class vehicle{
+            constructor(name,color){
+                this.name = name
+                this.color = color
+            }
+            start(){
+                alert(this.name+" your car is started")
+            }
+        }
+        class tata extends vehicle{
+            constructor(name,model,vehicle_type){
+                super(name, "Default Color");
+                this.name = name
+                this.model = model
+                this.vehicle_type = vehicle_type
+            }
+            run(){
+                alert(this.name+" your car is running and your model is "+this.model+" your vehicle type is "+this.vehicle_type)
+            }
+        }
+
+        let BMW= new vehicle('BMW SERIES 1',"Black")
+        let harrier = new tata("harrier",1234,"Electric")
+        BMW.start()
+        harrier.start()
+        harrier.run()
+    </script>
+</body>
+</html>
